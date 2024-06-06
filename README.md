@@ -71,14 +71,12 @@ This is a simple Flask web application that allows users to upload a WEBP file a
 2. Open a web browser and go to http://127.0.0.1:5000/.
 
 ## Project Structure
-    ```bash
-    /your_project_directory
+    /flask-webp-to-png
     ├── app.py
     ├── templates
     │   └── upload.html
     ├── requirements.txt
     └── Dockerfile
-    ```
 
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request.
