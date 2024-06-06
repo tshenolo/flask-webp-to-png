@@ -38,12 +38,11 @@ This is a simple Flask web application that allows users to upload a WEBP file a
 ## Running the Application
 
 1. Set the FLASK_APP environment variable:
-On Linux
+    On Linux  
     ```bash
-export FLASK_APP=app.py 
+    export FLASK_APP=app.py 
     ```
-
-On Windows
+    On Windows
     ```bash
     set FLASK_APP=app.py
     ```
@@ -61,6 +60,12 @@ On Windows
 1. Build the Docker image:
     ```bash
     docker build -t flask-webp-to-png .
+    ```
+
+### Running the Docker Container
+1. Run a container from the image:
+    ```bash
+    docker run -d -p 5000:5000 flask-webp-to-png
     ```
 
 2. Open a web browser and go to http://127.0.0.1:5000/.
