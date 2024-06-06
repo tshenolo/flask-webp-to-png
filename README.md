@@ -37,7 +37,7 @@ This is a simple Flask web application that allows users to upload a WEBP file a
 
 ## Running the Application
 
-1. Set the FLASK_APP environment variable:
+1. Set the FLASK_APP environment variable:  
     On Linux  
     ```bash
     export FLASK_APP=app.py 
