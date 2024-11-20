@@ -4,12 +4,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Convert WEBP to PNG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <h1>Convert WEBP to PNG</h1>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-      <input type="file" name="file">
-      <input type="submit" value="Convert">
-    </form>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white shadow-lg rounded-lg p-8 max-w-md w-full">
+      <h1 class="text-2xl font-bold text-gray-700 text-center mb-6">
+        <i class="fas fa-file-image text-blue-500 mr-2"></i> Convert WEBP to PNG
+      </h1>
+      <form action="/upload" method="post" enctype="multipart/form-data" class="space-y-4">
+        <div class="flex items-center justify-center relative">
+          <label class="w-full border-dashed border-2 border-gray-300 py-6 px-4 text-center rounded-lg hover:bg-gray-50 cursor-pointer">
+            <input type="file" name="file" id="fileInput" class="hidden" onchange="displayFileName()">
+            <i class="fas fa-upload text-gray-500 text-2xl"></i>
+            <p id="fileLabel" class="text-gray-500 mt-2">Click to upload a file</p>
+          </label>
+        </div>
+        <div class="flex justify-center">
+          <button type="submit" class="bg-blue-500 text-white font-semibold py-2 px-6 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
+            <i class="fas fa-sync-alt mr-2"></i> Convert
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      function displayFileName() {
+        const input = document.getElementById('fileInput');
+        const label = document.getElementById('fileLabel');
+        if (input.files && input.files[0]) {
+          label.textContent = `File: ${input.files[0].name}`;
+          label.classList.remove('text-gray-500');
+          label.classList.add('text-green-500');
+        }
+      }
+    </script>
   </body>
 </html>
