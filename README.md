@@ -81,7 +81,11 @@ This is a simple Flask web application that allows users to upload a WEBP file a
     └── Dockerfile
 
 ## Contributing
-Contributions are welcome! Please open an issue or submit a pull request.
+1. Fork the repository.
+2. Create a new branch (git checkout -b feature-branch).
+3. Commit your changes (git commit -am 'Add new feature').
+4. Push to the branch (git push origin feature-branch).
+5. Create a new Pull Request.
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
