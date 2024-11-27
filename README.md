@@ -1,6 +1,6 @@
 # Flask WEBP to PNG Converter
 
-This is a simple Flask web application that allows users to upload a WEBP file and get a PNG file in return. The application uses Pillow (PIL fork) to handle the image conversion.
+A self hostable Flask web application that allows users to upload a WEBP file and get a PNG file in return. The application uses Pillow (PIL fork) to handle the image conversion.
 
 ![screenshot](screenshot.png)
 
